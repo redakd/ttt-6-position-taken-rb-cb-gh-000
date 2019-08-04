@@ -1,8 +1,10 @@
 # code your #position_taken? method here!
-def position_taken(index,board)
+def position_taken?(board, index)
   if board[index] == ' ' or board[index] == ''
-    true
-  else
     false
+  elsif board[index] == nil
+    false
+  else
+    true
   end
 end
